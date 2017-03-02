@@ -96,40 +96,6 @@ def hill_sort(a):
         h=h//n
     return a
 
-#def partition(a, lo, hi):
-#    i, j = lo+1, hi-1
-#    key = a[lo]
-#    while True:
-#        while a[i] < key:
-#            if i == hi:
-#                break
-#            else:
-#                i += 1
-#        while a[j] > key:
-#            if j == lo:
-#               break
-#            else:
-#               j -= 1
-#        if i>=j:
-#          break
-#        a[i], a[j] = a[j], a[i]	
-#    a[lo], a[j] = a[j], a[lo]
-#    return j
-##@print_tim
-#def fast_sort(a):
-#    def sort(nums, lo, hi):
-#        if hi <= lo:
-#            return
-#        j = partition(nums, lo, hi)
-#        sort(nums, lo, j-1)
-#        sort(nums, j+1, hi)
-#    sort(a, 0, len(a)-1)
-#    return a
-
-
-
-
-
 def quick_sort(array,low,high):
     def sub_sort(array,low,high):
         key = array[low]
